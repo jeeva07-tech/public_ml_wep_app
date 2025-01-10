@@ -15,7 +15,7 @@ working_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Load models with error handling
 try:
-    diabetes_model = pickle.load(open('models\diabetes_model.sav', 'rb'))
+    diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
     heart_model = pickle.load(open( 'models\heart_disease_model.sav', 'rb'))
     parkinsons_model = pickle.load(open( 'models\parkinsons_model.sav', 'rb'))
 except FileNotFoundError as e:
