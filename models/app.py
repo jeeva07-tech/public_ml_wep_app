@@ -18,9 +18,9 @@ try:
     diabetes_model = pickle.load(open('C:/Users/welcome/OneDrive/Desktop/models/diabetes_model.sav', 'rb'))
     
 
-# Correct relative path
-model_path = "models/diabetes_model.sav"
-with open(model_path, "rb") as file:
+    # Correct relative path
+    model_path = "models/diabetes_model.sav"
+    with open(model_path, "rb") as file:
     model = pickle.load(file)
 
 
